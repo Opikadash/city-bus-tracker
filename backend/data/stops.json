@@ -1,0 +1,73 @@
+[
+  {
+    "id": "stop001",
+    "name": "Central Station",
+    "lat": 28.6139,
+    "lng": 77.2090,
+    "routes": ["1A", "2B", "10C"]
+  },
+  {
+    "id": "stop002",
+    "name": "Indira Gandhi Airport T1",
+    "lat": 28.5665,
+    "lng": 77.1031,
+    "routes": ["1A", "747"]
+  },
+  {
+    "id": "stop003",
+    "name": "Connaught Place",
+    "lat": 28.6315,
+    "lng": 77.2190,
+    "routes": ["2B", "5D", "101"]
+  },
+  {
+    "id": "stop004",
+    "name": "South Extension",
+    "lat": 28.5650,
+    "lng": 77.2110,
+    "routes": ["10C", "5D"]
+  },
+  {
+    "id": "stop005",
+    "name": "AIIMS Hospital",
+    "lat": 28.5715,
+    "lng": 77.1980,
+    "routes": ["5D", "733"]
+  },
+  {
+    "id": "stop006",
+    "name": "Nehru Place",
+    "lat": 28.5660,
+    "lng": 77.2480,
+    "routes": ["10C", "548"]
+  },
+  {
+    "id": "stop007",
+    "name": "Kashmere Gate ISBT",
+    "lat": 28.6705,
+    "lng": 77.2270,
+    "routes": ["2B", "101", "244"]
+  },
+  {
+    "id": "stop008",
+    "name": "Rajiv Chowk Metro",
+    "lat": 28.6320,
+    "lng": 77.2200,
+    "routes": ["1A", "2B"]
+  },
+  {
+    "id": "stop009",
+    "name": "Lajpat Nagar",
+    "lat": 28.5640,
+    "lng": 77.2390,
+    "routes": ["548", "10C"]
+  },
+  {
+    "id": "stop010",
+    "name": "Dwarka Sector 21",
+    "lat": 28.5840,
+    "lng": 77.0280,
+    "routes": ["747", "733"]
+  }
+]
+

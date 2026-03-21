@@ -1,0 +1,75 @@
+[
+  {
+    "routeId": "1A",
+    "name": "Airport Express",
+    "stops": ["stop002", "stop008", "stop001"],
+    "duration": 45,
+    "distance": 25,
+    "fare": 50
+  },
+  {
+    "routeId": "2B",
+    "name": "ISBT - CP - Central",
+    "stops": ["stop007", "stop003", "stop001"],
+    "duration": 30,
+    "distance": 15,
+    "fare": 25
+  },
+  {
+    "routeId": "10C",
+    "name": "South Ex - Nehru Place",
+    "stops": ["stop004", "stop006", "stop009"],
+    "duration": 20,
+    "distance": 8,
+    "fare": 15
+  },
+  {
+    "routeId": "5D",
+    "name": "South Extension - AIIMS",
+    "stops": ["stop004", "stop005"],
+    "duration": 10,
+    "distance": 4,
+    "fare": 10
+  },
+  {
+    "routeId": "747",
+    "name": "Airport - Dwarka",
+    "stops": ["stop002", "stop010"],
+    "duration": 35,
+    "distance": 20,
+    "fare": 40
+  },
+  {
+    "routeId": "733",
+    "name": "Dwarka - AIIMS",
+    "stops": ["stop010", "stop005"],
+    "duration": 50,
+    "distance": 28,
+    "fare": 55
+  },
+  {
+    "routeId": "101",
+    "name": "Kashmere Gate - CP",
+    "stops": ["stop007", "stop003"],
+    "duration": 25,
+    "distance": 12,
+    "fare": 20
+  },
+  {
+    "routeId": "548",
+    "name": "Nehru Place Loop",
+    "stops": ["stop006", "stop009", "stop006"],
+    "duration": 40,
+    "distance": 18,
+    "fare": 30
+  },
+  {
+    "routeId": "244",
+    "name": "ISBT Outer",
+    "stops": ["stop007"],
+    "duration": 60,
+    "distance": 35,
+    "fare": 45
+  }
+]
+
