@@ -1,9 +1,10 @@
 import { Routes, Route, Link } from 'react-router-dom'
 import Planner from './pages/Planner'
 import Tracker from './pages/Tracker'
-import Booking from './pages/Booking.tsx'
+import Booking from './pages/Booking'
+import Analytics from './pages/Analytics'
 
-import { Bus, MapPin, Ticket } from 'lucide-react'
+import { Bus, MapPin, Ticket, BarChart3 } from 'lucide-react'
 import './App.css'
 
 function App() {
@@ -29,6 +30,10 @@ function App() {
                 <Ticket className="h-5 w-5" />
                 <span>Tickets</span>
               </Link>
+              <Link to="/analytics" className="flex items-center space-x-2 px-3 py-2 text-gray-700 hover:text-blue-600 font-medium">
+                <BarChart3 className="h-5 w-5" />
+                <span>Analytics</span>
+              </Link>
             </div>
           </div>
         </div>
@@ -40,6 +45,7 @@ function App() {
           <Route path="/planner" element={<Planner />} />
           <Route path="/tracker" element={<Tracker />} />
           <Route path="/booking" element={<Booking />} />
+          <Route path="/analytics" element={<Analytics />} />
         </Routes>
       </main>
     </div>

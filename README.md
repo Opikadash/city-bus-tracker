@@ -32,6 +32,14 @@ Build:       Vite + esbuild
 ### Prerequisites
 - Docker & Docker Compose
 - Node.js 18+
+- **Auth0**: Client ID/Secret for JWT tokens (optional for protected APIs)
+
+### Auth0 JWT Token (Optional)
+```bash
+pip install requests  # or save get-auth0-token.py
+python scripts/get-auth0-token.py  # Replace placeholders, get token
+```
+Uses token: `AUTH0_ACCESS_TOKEN=eyJ...`
 
 ### 1. Clone & Setup
 ```bash

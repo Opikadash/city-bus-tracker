@@ -8,8 +8,9 @@ import path from 'path';
 import plannerRouter from './routes/planner';
 import trackingRouter from './routes/tracking';
 import bookingRouter from './routes/booking';
+import analyticsRouter from './routes/analytics';
 
-dotenv.config();
+dotenv.config({ path: '.env.auth0', override: true }); // Auth0 token
 
 const app: Express = express();
 const PORT = process.env.PORT || 3001;
@@ -31,6 +32,7 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/citybus')
 app.use('/api/planner', plannerRouter);
 app.use('/api/tracking', trackingRouter);
 app.use('/api/booking', bookingRouter);
+app.use('/api/analytics', analyticsRouter);
 
 app.get('/api/health', (req: Request, res: Response) => {
   res.json({ status: 'OK', timestamp: new Date().toISOString() });

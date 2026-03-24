@@ -1,0 +1,19 @@
+// This file prevents Prisma postinstall error - add real schema later
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("MONGODB_URI")
+}
+
+model User {
+  id       String @id @default(auto()) @map("_id") @db.ObjectId
+  email    String @unique
+  name     String?
+  tickets  String[]
+  favorites String[]
+}
+
+

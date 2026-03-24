@@ -1,0 +1,44 @@
+services:
+  mongodb:
+    image: mongo:7.0
+    container_name: citybus-mongo
+    restart: always
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: password
+    volumes:
+      - mongodb_data:/data/db
+
+  backend:
+    build: 
+      context: .
+      dockerfile: Dockerfile.backend
+    container_name: citybus-backend
+    restart: always
+    ports:
+      - "3001:3001"
+    environment:
+      MONGODB_URI: mongodb://admin:password@mongodb:27017/citybus?authSource=admin
+      JWT_SECRET: supersecretkey
+      PORT: 3001
+      FRONTEND_URL: http://localhost
+    depends_on:
+      - mongodb
+    volumes:
+      - ./backend:/app
+      - /app/node_modules
+
+  frontend:
+    build: ./frontend
+    container_name: citybus-frontend
+    restart: always
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+
+volumes:
+  mongodb_data:
+
